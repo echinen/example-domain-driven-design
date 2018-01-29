@@ -1,0 +1,38 @@
+﻿@model ExampleDDDArchitecture.MVC.ViewModels.PlanoViewModel
+
+@{
+    ViewBag.Title = "Deletando o plano";
+}
+
+<h2>Deletando o plano</h2>
+
+<h3>Tem certeza que deseja apagar esse registro?</h3>
+<div>
+    <h4>Plano</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PlanoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlanoId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoPlano)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoPlano)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-primary" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

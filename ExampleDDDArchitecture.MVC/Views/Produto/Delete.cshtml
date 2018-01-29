@@ -1,0 +1,48 @@
+﻿@model ExampleDDDArchitecture.MVC.ViewModels.ProdutoViewModel
+
+@{
+    ViewBag.Title = "Deletando o produto";
+}
+
+<h2>Deletando o produto</h2>
+
+<h3>Você tem certeza que deseja apagar o registro?</h3>
+<div>
+    <h4>Produto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrigemDDD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrigemDDD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DestinoDDD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DestinoDDD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tarifa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tarifa)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-primary" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>

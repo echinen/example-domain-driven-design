@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ExampleDDDArchitecture.MVC.ViewModels.ProdutoViewModel>
+
+@{
+    ViewBag.Title = "Todos os Produtos";
+}
+
+<h2>Todos os Produtos</h2>
+
+<p>
+    @Html.ActionLink("Cadastre um novo produto", "Create")
+</p>
+<table class="table">
+    <tr class="alert-info">
+        <th>
+            @Html.DisplayNameFor(model => model.OrigemDDD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DestinoDDD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tarifa)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrigemDDD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DestinoDDD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tarifa)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = new { item.OrigemDDD, item.DestinoDDD } }) |
+                @Html.ActionLink("Details", "Details", new { id = new { item.OrigemDDD, item.DestinoDDD } }) |
+                @Html.ActionLink("Delete", "Delete", new { id = new { item.OrigemDDD, item.DestinoDDD } })
+            </td>
+        </tr>
+    }
+
+</table>

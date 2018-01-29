@@ -1,0 +1,4 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.CrossCutting\bin\Debug\ProjetoScupFaleMais.Infra.CrossCutting.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.CrossCutting\bin\Debug\ProjetoScupFaleMais.Infra.CrossCutting.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.CrossCutting\obj\Debug\ProjetoScupFaleMais.Infra.CrossCutting.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.CrossCutting\obj\Debug\ProjetoScupFaleMais.Infra.CrossCutting.pdb

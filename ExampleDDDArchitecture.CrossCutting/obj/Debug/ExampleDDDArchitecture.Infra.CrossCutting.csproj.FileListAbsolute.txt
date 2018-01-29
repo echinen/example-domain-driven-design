@@ -1,0 +1,9 @@
+C:\Users\eric_\Documents\Projetos\Pessoal\ddd\Example-DDD-Architecture\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.CrossCutting\bin\Debug\ProjetoScupFaleMais.Infra.CrossCutting.dll
+C:\Users\eric_\Documents\Projetos\Pessoal\ddd\Example-DDD-Architecture\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.CrossCutting\bin\Debug\ProjetoScupFaleMais.Infra.CrossCutting.pdb
+C:\Users\eric_\Documents\Projetos\Pessoal\ddd\Example-DDD-Architecture\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.CrossCutting\obj\Debug\ExampleDDDArchitecture.Infra.CrossCutting.csprojResolveAssemblyReference.cache
+C:\Users\eric_\Documents\Projetos\Pessoal\ddd\Example-DDD-Architecture\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.CrossCutting\obj\Debug\ProjetoScupFaleMais.Infra.CrossCutting.dll
+C:\Users\eric_\Documents\Projetos\Pessoal\ddd\Example-DDD-Architecture\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.CrossCutting\obj\Debug\ProjetoScupFaleMais.Infra.CrossCutting.pdb
+C:\Users\eric_\Documents\Projetos\Pessoal\ExampleDDDArchitecture\ExampleDDDArchitecture\ExampleDDDArchitecture.CrossCutting\bin\Debug\ExampleDDDArchitecture.Infra.CrossCutting.dll
+C:\Users\eric_\Documents\Projetos\Pessoal\ExampleDDDArchitecture\ExampleDDDArchitecture\ExampleDDDArchitecture.CrossCutting\bin\Debug\ExampleDDDArchitecture.Infra.CrossCutting.pdb
+C:\Users\eric_\Documents\Projetos\Pessoal\ExampleDDDArchitecture\ExampleDDDArchitecture\ExampleDDDArchitecture.CrossCutting\obj\Debug\ExampleDDDArchitecture.Infra.CrossCutting.dll
+C:\Users\eric_\Documents\Projetos\Pessoal\ExampleDDDArchitecture\ExampleDDDArchitecture\ExampleDDDArchitecture.CrossCutting\obj\Debug\ExampleDDDArchitecture.Infra.CrossCutting.pdb

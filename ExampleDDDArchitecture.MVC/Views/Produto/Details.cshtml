@@ -1,0 +1,42 @@
+﻿@model ExampleDDDArchitecture.MVC.ViewModels.ProdutoViewModel
+
+@{
+    ViewBag.Title = "Detalhes do Produto";
+}
+
+<h2>Detalhes do Produto</h2>
+
+<div>
+    <h4>Produto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrigemDDD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrigemDDD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DestinoDDD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DestinoDDD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tarifa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tarifa)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar?", "Edit", new { id = new { Model.OrigemDDD, Model.DestinoDDD } }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

@@ -1,0 +1,9 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Application\bin\Debug\ProjetoScupFaleMais.Application.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Application\bin\Debug\ProjetoScupFaleMais.Application.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Application\bin\Debug\ProjetoScupFaleMais.Domain.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Application\bin\Debug\ProjetoScupFaleMais.Domain.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Application\obj\Debug\ProjetoScupFaleMais.Application.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Application\obj\Debug\ProjetoScupFaleMais.Application.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Application\obj\Debug\ProjetoScupFaleMais.Application.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Application\bin\Debug\ProjetoScupFaleMais.Infra.CrossCutting.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Application\bin\Debug\ProjetoScupFaleMais.Infra.CrossCutting.pdb

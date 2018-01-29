@@ -1,0 +1,175 @@
+﻿@model ExampleDDDArchitecture.MVC.ViewModels.CotacaoViewModel
+
+
+@{
+    ViewBag.Title = "Fazendo cotação";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h4>Cotação</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group ">
+            @Html.LabelFor(model => model.Plano.TipoPlano, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("PlanoId", (IEnumerable<SelectListItem>)ViewBag.TiposPlanos, new { @id = "cbbPlano", @class = "btn btn-default dropdown-toggle" })
+                @Html.ValidationMessageFor(model => model.PlanoId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.OrigemDDD, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.OrigemDDD, new { htmlAttributes = new { @id = "txtOrigem", @class = "form-control", @placeholder = "Ex: 011", @maxlength = "3" } })
+                @Html.ValidationMessageFor(model => model.OrigemDDD, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DestinoDDD, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DestinoDDD, new { htmlAttributes = new { @id = "txtDestino", @class = "form-control", @placeholder = "Ex: 016", @maxlength = "3" } })
+                @Html.ValidationMessageFor(model => model.DestinoDDD, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TempoLigacao, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TempoLigacao, new { htmlAttributes = new { @id = "txtTempo", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TempoLigacao, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ComFaleMais, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ComFaleMais, new { htmlAttributes = new { @id = "txtComFaleMais", @class = "form-control", @readonly = true } })
+                @Html.ValidationMessageFor(model => model.ComFaleMais, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SemFaleMais, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SemFaleMais, new { htmlAttributes = new { @id = "txtSemFaleMais", @class = "form-control", @readonly = true } })
+                @Html.ValidationMessageFor(model => model.SemFaleMais, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="button" id="btnCotacao" value="Fazer Cotação" class="btn btn-success" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" id="btnGerarCotacao" value="Gravar Cotação" class="btn btn-primary" />
+            </div>
+        </div>
+
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Voltar", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('#txtDestino').change(function () {
+
+            var txtOrigem = $('#txtOrigem').val();
+            var txtDestino = $('#txtDestino').val();
+
+            if (txtOrigem == '') {
+                alert('Preencha o campo Origem DDD!');
+            }
+            else if (txtDestino == '') {
+                alert('Preencha o campo Destino DDD!');
+            }
+            else {
+                $.ajax({
+                    type: 'GET',
+                    data: { origemDDD: txtOrigem, destinoDDD: txtDestino },
+                    url: '@Url.Action("ValidateOrigemDDDDestinoDDD", "Cotacao")',
+                    beforeSend: function () {
+                        //alert('Verificando...');
+                    },
+                    success: function (result) {
+                        //TO DO - mostrar na tela que os campos origem e destino são válidos ou inválidos.
+                        if (result > 0) {
+                            $('#txtOrigem').addClass('alert-success');
+                            $('#txtDestino').addClass('alert-success');
+                        }
+                        else {
+                            $('#txtOrigem').addClass('alert-danger');
+                            $('#txtDestino').addClass('alert-danger');
+                        }
+                        
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        alert("Ajax Failed!!!");
+                    }
+                });
+            }
+        });
+
+        $('#btnCotacao').click(function () {
+
+            var txtOrigem = $('#txtOrigem').val();
+            var txtDestino = $('#txtDestino').val();
+            var cbbPlano = $('#cbbPlano').val();
+            var txtTempo = $('#txtTempo').val();
+
+            if (txtOrigem == '') {
+                alert('Preencha o campo Origem DDD!');
+                //$('#txtOrigem').addClass('alert-danger');
+            }
+            else if (txtDestino == '') {
+                alert('Preencha o campo Destino DDD!');
+            }
+            else if (cbbPlano == '') {
+                alert('Escolha um Tipo de Plano!');
+            }
+            else if (txtTempo == '') {
+                alert('Preencha o campo Tempo de Ligação!');
+            }
+            else {
+                $.ajax({
+                    type: 'GET',
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    data: { origemDDD: txtOrigem, destinoDDD: txtDestino, plano: cbbPlano, tempo: txtTempo },
+                    url: '@Url.Action("NewQuotation", "Cotacao")',
+                    beforeSend: function () {
+                        //alert('Fazendo Cotação...');
+                    },
+                    success: function (result) {
+                        var SemfaleMais = parseFloat(result.SemFaleMais);
+                        var ComFaleMais = parseFloat(result.ComFaleMais);
+
+                        $('#txtSemFaleMais').val(SemfaleMais.toFixed(2));
+                        $('#txtComFaleMais').val(ComFaleMais.toFixed(2));
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        alert("Ajax Failed!!!");
+                    }
+                });
+            }
+        });
+
+    });
+</script>

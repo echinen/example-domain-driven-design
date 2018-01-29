@@ -1,0 +1,69 @@
+﻿@model IEnumerable<ExampleDDDArchitecture.MVC.ViewModels.CotacaoViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr class="alert-info">
+        <th>
+            @Html.DisplayNameFor(model => model.CotacaoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Plano.TipoPlano)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrigemDDD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DestinoDDD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TempoLigacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComFaleMais)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SemFaleMais)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CotacaoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Plano.TipoPlano)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrigemDDD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DestinoDDD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TempoLigacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComFaleMais)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SemFaleMais)
+        </td>
+        <td>
+            @Html.ActionLink("Editar ?", "Edit", new { id=item.CotacaoId }) |
+            @Html.ActionLink("Detalhes ?", "Details", new { id=item.CotacaoId }) |
+            @Html.ActionLink("Apagar ?", "Delete", new { id=item.CotacaoId })
+        </td>
+    </tr>
+}
+
+</table>

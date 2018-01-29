@@ -1,0 +1,14 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.Data\bin\Debug\ProjetoScupFaleMais.Infra.Data.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.Data\bin\Debug\ProjetoScupFaleMais.Infra.Data.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.Data\bin\Debug\ProjetoScupFaleMais.Infra.Data.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.Data\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.Data\bin\Debug\ProjetoScupFaleMais.Domain.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.Data\bin\Debug\ProjetoScupFaleMais.Domain.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.Data\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.Data\obj\Debug\ProjetoScupFaleMais.Infra.Data.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.Data\obj\Debug\ProjetoScupFaleMais.Infra.Data.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.Data\obj\Debug\ProjetoScupFaleMais.Infra.Data.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.Data\bin\Debug\ProjetoScupFaleMais.Infra.CrossCutting.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\ProjetoScupFaleMais\ProjetoScupFaleMais.Infra.Data\bin\Debug\ProjetoScupFaleMais.Infra.CrossCutting.pdb

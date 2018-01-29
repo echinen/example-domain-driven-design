@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ExampleDDDArchitecture.MVC.ViewModels.PlanoViewModel>
+
+@{
+    ViewBag.Title = "Todos os Planos";
+}
+
+<h2>Todos os Planos</h2>
+
+<p>
+    @Html.ActionLink("Cadastre um novo plano", "Create")
+</p>
+<table class="table">
+    <tr class="alert-info">
+        <th>
+            @Html.DisplayNameFor(model => model.PlanoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoPlano)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlanoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoPlano)
+        </td>
+        <td>
+            @Html.ActionLink("Editar?", "Edit", new { id=item.PlanoId }) |
+            @Html.ActionLink("Detalhes?", "Details", new { id=item.PlanoId }) |
+            @Html.ActionLink("Apagar?", "Delete", new { id=item.PlanoId })
+        </td>
+    </tr>
+}
+
+</table>
